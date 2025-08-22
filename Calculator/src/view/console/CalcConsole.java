@@ -11,7 +11,7 @@ public class CalcConsole {
 	public CalcConsole(Calc calc) {
 		if(calc == null)
 			throw new IllegalArgumentException(
-					"É necessário uma instância válida de Square");
+					"É necessário uma instância válida de Calc");
 		this.calc = calc;
 	}
 	
@@ -22,3 +22,4 @@ public class CalcConsole {
 		}
 	}
 }
+
