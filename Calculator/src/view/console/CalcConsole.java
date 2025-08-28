@@ -1,7 +1,5 @@
 package view.console;
 
-import java.io.Console;
-
 import model.Calc;
 
 public class CalcConsole {
@@ -22,4 +20,3 @@ public class CalcConsole {
 		}
 	}
 }
-
