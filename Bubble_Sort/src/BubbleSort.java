@@ -1,5 +1,5 @@
 import java.util.*;
-public class BubbleSort<T> {
+public class BubbleSort<T> extends ObservableSort{
     private void troca(T[] array, int i, int j){
             T temp = array[i];
             array[i] = array[j];
@@ -10,11 +10,14 @@ public class BubbleSort<T> {
         int n = array.length;
         for(int fase=1;fase<n;fase++){
             for(int j=0;j<n-fase;j++){
+              	notificarComparacao(j, j+1);
                 if(comparator.compare(array[j],array[j+1]) >0){
                     troca(array, j, j+1);
+                    notificarTrocas(j, j+1);
                 }// fim if
             }// fim for j
         }// fim for fase
+        notificarConclusao();
         return array;
     } 
 
@@ -26,7 +29,6 @@ public class BubbleSort<T> {
             System.out.println("Fase:"+fase); //
            System.out.println( Arrays.toString(array)); // printa vetor
             leia.nextLine(); // pause
-
             for(int j=0;j<n-fase;j++){
                 if(comparator.compare(array[j],array[j+1]) >0){
                     troca(array, j, j+1);
