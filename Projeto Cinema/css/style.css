@@ -1,8 +1,19 @@
 :root {
-    --cor-texto: white;
-    --cor-secundaria: red;
+    --cor-texto: royalblue;
+    --cor-secundaria: white;
 }
 
+body{
+    background-color: black;
+}
+
+h1{
+    color: var(--cor-texto);
+}
+
+p{
+    font-size: 20px;
+}
 
 menu{
     margin-top: 2.9rem;
@@ -11,7 +22,11 @@ menu{
     border-radius: 16px;
 }
 
-menu a{
+menu h2{
+    display: inline-block;
+}
+
+menu h2 a{
     color: var(--cor-texto);
     font-weight: bold;
     margin: 3rem;
@@ -30,17 +45,99 @@ menu a:hover{
     animation: border_a 3s ease-in-out infinite alternate;
 }
 
+section{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    flex-grow: 1; /* Ocupa todo o espaço disponível */
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+}
+
+footer{
+    height: 50px;
+    background-color: black;
+    color: var(--cor-texto);
+    padding: 10px;
+}
+
+.apresentation {
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 16px;
+    text-align: center;
+    width: calc(20% - 20px);
+    /* Garante que cada card ocupe 20% da largura, descontando o gap */
+    background-color: #313131;
+    border: 1px solid #ccc;
+    color: white;
+    padding: 20px;
+}
+
+.apresentation:hover{
+    cursor: pointer;
+}
+
+.city_select{
+    border-bottom: 2px var(--cor-secundaria) solid;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex: 1 1;
+    gap: 20px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que a altura seja pelo menos a altura da viewport */
+}
+
+.image{
+    margin-top: 383px;
+    width: 200px;
+    /*animation: section_image 5s ease-in-out infinite alternate;*/
+}
+
+.link_index{
+    text-decoration: none;
+    cursor: auto;
+}
+
+.now{
+    background-color: darkgreen;
+}
+
+.surprise{
+    background-color: darkgoldenrod;
+}
+
+.tomorrow{
+    background-color: darkblue;
+}
+
 @keyframes border_a{
     from{
-        font-size: large;
     }
     50%{
         opacity: 0.5;
-        font-size: larger;
     }
     to {
         opacity: 1;
-        font-size: large;
     }
 }
 
@@ -60,92 +157,4 @@ menu a:hover{
         transform: translateY(0);
         /*opacity: 1*/
     }
-}
-
-body{
-    background-color: black;
-}
-
-.link_index{
-    text-decoration: none;
-    cursor: auto;
-}
-
-section{
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    flex-grow: 1; /* Ocupa todo o espaço disponível */
-}
-
-.image{
-    margin-top: 383px;
-    width: 200px;
-    /*animation: section_image 5s ease-in-out infinite alternate;*/
-}
-
-video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Garante que a altura seja pelo menos a altura da viewport */
-}
-
-footer{
-    height: 50px;
-    background-color: black;
-    color: var(--cor-secundaria);
-}
-
-.city_select{
-    border-bottom: 2px var(--cor-secundaria) solid;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    flex: 1 1;
-    gap: 20px;
-}
-
-h1{
-    color: var(--cor-texto);
-}
-
-.apresentation {
-    border: 1px solid rgb(131, 131, 131);
-    border-radius: 16px;
-    text-align: center;
-    width: calc(20% - 20px);
-    /* Garante que cada card ocupe 20% da largura, descontando o gap */
-    background-color: #313131;
-    border: 1px solid #ccc;
-    color: white;
-    padding: 20px;
-}
-
-p{
-    font-size: 20px;
-}
-
-.hoje{
-    background-color: darkgreen;
-}
-
-.amanha{
-    background-color: darkblue;
 }
