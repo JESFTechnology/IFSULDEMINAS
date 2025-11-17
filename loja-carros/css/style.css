@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+}
+
+body h1{
+    text-align: center;
+    font-weight: bolder;
+    color: #111;
+}
+
+.venda{
+    background-color: rgb(19, 19, 19);
+    padding: 5px 25px 25px 25px;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.venda h2{
+    color: white;
+}
+
+p{
+    color: #b2b2b2;
+}
+
+produto{
+    color: #febe01;
+}
+
+button{
+    background-color: #febe01;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
