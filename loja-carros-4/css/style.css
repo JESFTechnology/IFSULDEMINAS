@@ -1,0 +1,117 @@
+body{
+    font-family: Arial;
+}
+
+body h1{
+    text-align: center;
+    font-weight: bolder;
+    color: #111;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#circular {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 2px #09419b;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    background-color: #09419b;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+}
+
+.nav-right li a:hover {
+    color: #febe01; 
+}
+
+section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.venda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: rgb(19, 19, 19);
+    padding: 5px 25px 25px 25px;
+    border-radius: 4px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.venda h2{
+    color: white;
+}
+
+.venda img{
+    margin-top: 20px;
+    border: white 2px solid;
+    width: 40%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+menu a{
+    text-decoration: none;
+    background-color: #639b09;
+    width: 100px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin: 0 15px;
+    font-weight: 600;
+    
+}
+
+p{
+    color: #b2b2b2;
+}
+
+produto{
+    color: #febe01;
+}
+
+button{
+    background-color: #febe01;
+    border: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}
